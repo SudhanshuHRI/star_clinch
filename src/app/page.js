@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div>
           <img
-            src="/assets/frame1.png"
+            src="/assets/Frame1.png"
             width={100}
             height={100}
             alt="img"
