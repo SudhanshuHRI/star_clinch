@@ -38,7 +38,7 @@ export default function Home() {
             className="Section1Img1"
           />
           {/* <Image src="/assets/Vector1.png" width={100} height={100} alt="img" className="Section1Img2"/> */}
-          <p className="sec1Para3">Click here to view more</p>
+          <p className="sec1Para3 pointer">Click here to view more</p>
         </div>
         <div className="sec1-3">
           <p className="sec1Para">
@@ -54,8 +54,8 @@ export default function Home() {
       <section className="Sec2Container">
         <div className="sec2SubCont1">
           <div>
-            <p className="sec2SubCont1p1">Photos</p>
-            <p className="sec2SubCont1p2">Videos</p>
+            <p className="sec2SubCont1p1 pointer">Photos</p>
+            <p className="sec2SubCont1p2 pointer">Videos</p>
           </div>
         </div>
         <div className="sec2SubCont2">
@@ -95,29 +95,29 @@ export default function Home() {
           </div>
         </div>
         <div className="sec2SubCont3">
-          <div className="sec2SubCont3Slider1dot"></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className="sec2SubCont3Slider1dot pointer"></div>
+          <div className="pointer"></div>
+          <div className="pointer"></div>
+          <div className="pointer"></div>
         </div>
       </section>
 
       <section className="Sec3Container">
         <div style={{ paddingLeft: "100px" }}>
           <p>Late Night Maggie Party for the boost</p>
-          <img src="/assets/image2.png" width={300} />
+          <img src="/assets/image2.png" width={300} className="pointer"/>
         </div>
         <div style={{ paddingLeft: "800px" }}>
           <p>Late Night Maggie Party for the boost</p>
-          <img src="/assets/image2.png" width={300} />
+          <img src="/assets/image2.png" width={300} className="pointer"/>
         </div>
         <div style={{ paddingLeft: "100px" }}>
           <p>Late Night Maggie Party for the boost</p>
-          <img src="/assets/image2.png" width={300} />
+          <img src="/assets/image2.png" width={300} className="pointer"/>
         </div>
         <div style={{ paddingLeft: "800px" }}>
           <p>Late Night Maggie Party for the boost</p>
-          <img src="/assets/image2.png" width={300} />
+          <img src="/assets/image2.png" width={300} className="pointer"/>
         </div>
       </section>
 
@@ -127,21 +127,33 @@ export default function Home() {
         </div>
         <div className="sec4SubCont2">
           <div>
-            <img src="/assets/image4.png" className="sec4Img1" />
+            <img src="/assets/image4.png" className="sec4Img1 pointer" />
           </div>
-          <div style={{ width: "300px" }} className="sliderContainer">
+          <div style={{ width: "300px" }} className="sliderContainer pointer">
             <Slider {...settings}>
               <div>
-                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+                <img
+                  src="/assets/image4.png"
+                  style={{ borderRadius: "50px" }}
+                />
               </div>
               <div>
-                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+                <img
+                  src="/assets/image4.png"
+                  style={{ borderRadius: "50px" }}
+                />
               </div>
               <div>
-                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+                <img
+                  src="/assets/image4.png"
+                  style={{ borderRadius: "50px" }}
+                />
               </div>
               <div>
-                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+                <img
+                  src="/assets/image4.png"
+                  style={{ borderRadius: "50px" }}
+                />
               </div>
             </Slider>
           </div>
@@ -150,7 +162,7 @@ export default function Home() {
           <img src="/assets/image4.png" />
           <FaArrowRight /> */}
           <div>
-            <img src="/assets/image4.png" className="sec4Img2" />
+            <img src="/assets/image4.png" className="sec4Img2 pointer" />
           </div>
         </div>
         <div className="sec4SubCont3">
