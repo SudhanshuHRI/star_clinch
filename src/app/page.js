@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -8,8 +9,20 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import Slider from "react-slick";
 
 export default function Home() {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <section className="Section1Container ">
@@ -116,10 +129,26 @@ export default function Home() {
           <div>
             <img src="/assets/image4.png" className="sec4Img1" />
           </div>
+          <div style={{ width: "300px" }} className="sliderContainer">
+            <Slider {...settings}>
+              <div>
+                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+              </div>
+              <div>
+                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+              </div>
+              <div>
+                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+              </div>
+              <div>
+                <img src="/assets/image4.png" style={{borderRadius:"50px"}}/>
+              </div>
+            </Slider>
+          </div>
 
-          <FaArrowLeft />
+          {/* <FaArrowLeft />
           <img src="/assets/image4.png" />
-          <FaArrowRight />
+          <FaArrowRight /> */}
           <div>
             <img src="/assets/image4.png" className="sec4Img2" />
           </div>
@@ -210,7 +239,9 @@ export default function Home() {
             </p>
           </div>
           <div className="sec6Btn">
-            <button>Join our team  <FaArrowRight /></button>
+            <button>
+              Join our team <FaArrowRight />
+            </button>
           </div>
 
           <div className="sec6SubCont2">
